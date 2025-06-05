@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Tech Coach - Aprende Tecnología Sin Miedo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Consider adding Poppins and Roboto fonts from Google Fonts if not locally hosted -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <!-- Placeholder for Logo -->
+                <a href="#">IvanTechCoach</a>
+            </div>
+            <nav id="nav-menu">
+                <button id="hamburger-button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="fullscreen-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="desktop-nav-links">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="fullscreen-menu" class="fullscreen-overlay" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="overlay-content">
+            <h2 id="menu-title" class="visually-hidden">Menú Principal</h2>
+            <button id="close-menu-button" aria-label="Cerrar menú de navegación">&times;</button>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li class="has-submenu">
+                    <a href="#services" role="button" aria-expanded="false" aria-controls="services-submenu">Servicios</a>
+                    <ul id="services-submenu" class="submenu" hidden>
+                        <li><a href="#service-digital-coaching">Acompañamiento Digital</a></li>
+                        <li><a href="#service-it-support">Soporte IT</a></li>
+                        <li><a href="#service-cybersecurity">Asesoría en Ciberseguridad</a></li>
+                        <li class="has-submenu">
+                            <a href="#service-ai-social" role="button" aria-expanded="false" aria-controls="ai-social-submenu">Formación en IA y Redes Sociales</a>
+                            <ul id="ai-social-submenu" class="submenu" hidden>
+                                <li><a href="#service-practical-ai">IA práctica</a></li>
+                                <li><a href="#service-social-security">Seguridad en RRSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Aprende a usar la tecnología sin miedo</h1>
+                <p class="subtitle">Clases personalizadas y acompañamiento digital para personas mayores de 40 años.</p>
+                <a href="#contact" class="cta-button">¡Quiero Empezar!</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="profile-photo">
+                        <!-- Placeholder for Profile Photo -->
+                        <img src="placeholder-profile.jpg" alt="Ivan - Tu Coach Tecnológico" style="width:150px; height:150px; background-color:#ccc; border-radius:50%;">
+                    </div>
+                    <div class="bio">
+                        <p>Hola, soy Iván. Mi pasión es ayudar a personas como tú a sentirse seguras y competentes con la tecnología. Entiendo que el mundo digital puede parecer abrumador, especialmente si no creciste con él. Por eso, ofrezco un acompañamiento cercano, paciente y adaptado a tus necesidades, para que puedas desde comunicarte con tus seres queridos hasta realizar trámites online o explorar nuevas aficiones, todo con confianza y sin agobios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Mis Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon"><!-- Icon Placeholder --></div>
+                        <h3>Acompañamiento Digital Personalizado</h3>
+                        <p>Te guío paso a paso en el uso de tu smartphone, tablet u ordenador. Aprende a tu ritmo y resuelve todas tus dudas.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><!-- Icon Placeholder --></div>
+                        <h3>Soporte IT Amigable</h3>
+                        <p>¿Problemas con tus dispositivos o programas? Te ayudo a solucionarlos de forma sencilla y comprensible.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><!-- Icon Placeholder --></div>
+                        <h3>Asesoría en Ciberseguridad</h3>
+                        <p>Navega seguro por internet. Aprende a proteger tu información personal y evitar estafas online.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><!-- Icon Placeholder --></div>
+                        <h3>Formación en IA y Redes Sociales</h3>
+                        <p>Descubre cómo la Inteligencia Artificial puede facilitarte la vida y cómo usar las Redes Sociales de forma segura y divertida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Confianza y Cercanía</h2>
+                <blockquote>
+                    <p>"Gracias a Iván, por fin entiendo cómo usar WhatsApp para hablar con mis nietos. ¡Sus clases son una maravilla!"</p>
+                    <footer>- Alumno Satisfecho</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>¿Listo para empezar?</h2>
+                <p>Envíame un mensaje y hablemos sobre cómo puedo ayudarte.</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" class="contact-button whatsapp">
+                        Contactar por WhatsApp
+                    </a>
+                    <a href="mailto:YOUR_EMAIL_ADDRESS" class="contact-button gmail">
+                        Enviar un Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="social-icons">
+                <!-- Placeholders for Social Media Icons -->
+                <a href="#" aria-label="YouTube" target="_blank">YT</a>
+                <a href="#" aria-label="Instagram" target="_blank">IG</a>
+                <a href="#" aria-label="TikTok" target="_blank">TT</a>
+                <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" aria-label="WhatsApp" target="_blank">WA</a>
+                <a href="mailto:YOUR_EMAIL_ADDRESS" aria-label="Gmail">EM</a>
+                <a href="#" aria-label="Facebook" target="_blank">FB</a>
+            </div>
+            <div class="legal-info">
+                <p>&copy; <span id="current-year"></span> Ivan Tech Coach. Todos los derechos reservados.</p>
+                <p><a href="#privacy">Política de Privacidad</a> | <a href="#terms">Términos de Servicio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mainscript.js"></script>
+</body>
+</html>
